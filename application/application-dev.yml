@@ -23,17 +23,17 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://root:root@paascloud-eureka:8761/eureka/
+      defaultZone: http://root:root@192.168.22.60:8761/eureka/
 paascloud:
   server:
     eureka:
       port: 8761
       hostname: paascloud-eureka
-      serviceUrl: http://root:root@paascloud-eureka:8761/eureka/
+      serviceUrl: http://root:root@192.168.22.60:8761/eureka/
     discovery:
       port: 8080
       hostname: paascloud-discovery
-      serviceUrl: http://admin:admin@paascloud-discovery:8080
+      serviceUrl: http://admin:admin@192.168.22.60:8080
     gateway:
       port: 80
       hostname: paascloud-gateway
