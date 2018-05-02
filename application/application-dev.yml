@@ -73,7 +73,7 @@ paascloud:
       expiredRemainMinutes: 20
       expiredMinutes: 120
   mail:
-    host: smtp.163.com
+    host: mail.163.com
     username: 'lt_vip186'
     password: 'Aa_dell123'
     test-connection: false
