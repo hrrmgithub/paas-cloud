@@ -4,6 +4,6 @@ spring:
 paascloud:
   aliyun:
     rocketMq:
-      instanceName: paascloud-provider-tpc
+      instanceName: systec-provider-tpc
       consumerGroup: CID_TPC
       producerGroup: PID_TPC
