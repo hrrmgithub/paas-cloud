@@ -4,6 +4,6 @@ spring:
 paascloud:
   aliyun:
     rocketMq:
-      instanceName: paascloud-provider-omc
+      instanceName: systec-provider-omc
       consumerGroup: CID_OMC
       producerGroup: PID_OMC
