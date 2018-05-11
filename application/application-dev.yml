@@ -24,50 +24,50 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://root:root@192.168.22.60:8761/eureka/
-paascloud:
+systec:
   server:
     eureka:
       port: 8761
-      hostname: paascloud-eureka
+      hostname: systec-eureka
       serviceUrl: http://root:root@192.168.22.60:8761/eureka/
     discovery:
       port: 8080
-      hostname: paascloud-discovery
+      hostname: systec-discovery
       serviceUrl: http://admin:admin@192.168.22.60:8080
     gateway:
       port: 80
-      hostname: paascloud-gateway
+      hostname: systec-gateway
     monitor:
       port: 8010
-      hostname: paascloud-monitor
-      serviceUrl: http://paascloud-monitor:8010
+      hostname: systec-monitor
+      serviceUrl: http://systec-monitor:8010
     zipkin:
       port: 8020
-      hostname: paascloud-zipkin
-      serviceUrl: http://paascloud-zipkin:8020
+      hostname: systec-zipkin
+      serviceUrl: http://systec-zipkin:8020
     provider:
       ehc:
         port: 8040
-        hostname: paascloud-provider-ehc
+        hostname: systec-provider-ehc
       mdc:
         port: 8030
-        hostname: paascloud-provider-mdc
+        hostname: systec-provider-mdc
       omc:
         port: 8050
-        hostname: paascloud-provider-omc
+        hostname: systec-provider-omc
       opc:
         port: 8070
-        hostname: paascloud-provider-opc
+        hostname: systec-provider-opc
       ptc:
         port: 8060
-        hostname: paascloud-provider-ptc
+        hostname: systec-provider-ptc
       uac:
         port: 8000
-        hostname: paascloud-provider-uac
+        hostname: systec-provider-uac
     web:
       mall:
         port: 9000
-        hostname: paascloud-web-mall
+        hostname: systec-web-mall
   auth:
     jwt:
       expiredRemainMinutes: 20
@@ -107,7 +107,7 @@ paascloud:
       publicHost: 'your qiniu oss public host'
   alipay:
     callback:
-      url: http://dev-api.paascloud.net/omc/pay/alipayCallback
+      url: http://dev-api.systec.net/omc/pay/alipayCallback
     qrCode:
       pcPath: E:/File/alipay/QRCode
       qiniuPath: alipay/QRCode/
